@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "X",
+        "#"
+    ],
+    "key": {
+        "X": [
+            { "item": "minecraft:coal" },
+            { "item": "minecraft:charcoal" }
+        ],
+        "#": [
+            { "item": "minecraft:cobblestone" },
+            { "item": "minecraft:blackstone" }
+        ]
+    },
+    "result": {
+        "item": "zrbloodmachine:stone_torch",
+        "count": 6
+    }
+}

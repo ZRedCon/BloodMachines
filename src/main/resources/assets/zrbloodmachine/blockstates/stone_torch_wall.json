@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=east": { "model": "zrbloodmachine:block/stone_torch_wall", "y": 0 },
+    "facing=north": { "model": "zrbloodmachine:block/stone_torch_wall", "y": 270  },
+    "facing=south": { "model": "zrbloodmachine:block/stone_torch_wall", "y": 90 },
+    "facing=west": { "model": "zrbloodmachine:block/stone_torch_wall", "y": 180 }
+  }
+}
