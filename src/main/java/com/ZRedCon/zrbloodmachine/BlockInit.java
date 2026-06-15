@@ -29,6 +29,7 @@ public class BlockInit {
         .strength(3.0f, 2.0f)
         .requiresCorrectToolForDrops()
         .lightLevel(state -> 15)
+        .sound(SoundType.GLASS)
     ));
 
     public static final RegistryObject<Block> STONE_TORCH = BLOCKS.register("stone_torch",
