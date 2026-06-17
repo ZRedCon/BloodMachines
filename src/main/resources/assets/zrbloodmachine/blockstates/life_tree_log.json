@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "zrbloodmachine:block/life_tree_log"
+        },
+        "axis=z": {
+            "model": "zrbloodmachine:block/life_tree_log",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "zrbloodmachine:block/life_tree_log",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

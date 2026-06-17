@@ -3,5 +3,7 @@
   "itemGroup.item_tab": "Items",
   "block.zrbloodmachine.hardend_blood_ore": "Hardend Blood Ore",
   "block.zrbloodmachine.hell_ore": "Hell Ore",
-  "block.zrbloodmachine.stone_torch": "Stone Torch"
+  "block.zrbloodmachine.stone_torch": "Stone Torch",
+  "block.zrbloodmachine.life_tree_sapling": "Sapling of the Tree of Life",
+  "block.zrbloodmachine.life_tree_log": "Tree of Life Log"
 }

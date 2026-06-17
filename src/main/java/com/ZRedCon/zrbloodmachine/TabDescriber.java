@@ -13,7 +13,6 @@ public class TabDescriber {
     public MutableComponent title;
     public Supplier<ItemStack> icon;
 
-    @SuppressWarnings("null")
     public TabDescriber(String name, Item displayIcon) {
         String titleString = "itemGroup." + name;
 
@@ -22,7 +21,6 @@ public class TabDescriber {
         this.icon = () -> new ItemStack(displayIcon);
     }
 
-    @SuppressWarnings("null")
     public TabDescriber(String name, Supplier<? extends ItemLike> displayIcon) {
         String titleString = "itemGroup." + name;
 

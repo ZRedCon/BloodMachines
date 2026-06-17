@@ -2,6 +2,7 @@ package com.ZRedCon.zrbloodmachine;
 
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -9,7 +10,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-@SuppressWarnings("null")
 public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ZRBloodMachine.MOD_ID);
 
@@ -26,7 +26,7 @@ public class BlockInit {
     public static final RegistryObject<Block> HELL_ORE = BLOCKS.register("hell_ore", 
         () -> new Block(BlockBehaviour.Properties.of()
         .mapColor(MapColor.COLOR_ORANGE)
-        .strength(3.0f, 2.0f)
+        .strength(1.0f, 0.5f)
         .requiresCorrectToolForDrops()
         .lightLevel(state -> 15)
         .sound(SoundType.GLASS)
@@ -52,4 +52,22 @@ public class BlockInit {
             .lootFrom(() -> STONE_TORCH.get()),
             ParticleTypes.FLAME)
     );
+
+    public static final RegistryObject<Block> LIFE_TREE_SAPLING = BLOCKS.register("life_tree_sapling",
+        () -> new LifeTreeSaplingBlock(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.PLANT)
+            .noCollission()
+            .instabreak()
+            .sound(SoundType.SOUL_SAND)
+            .randomTicks()
+    ));
+
+    public static final RegistryObject<Block> LIFE_TREE_LOG = BLOCKS.register("life_tree_log", 
+        () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.WOOD)
+            .strength(2.0f)
+            .sound(SoundType.WOOD)
+    ));
+
+    
 }

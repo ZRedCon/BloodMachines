@@ -16,6 +16,7 @@ public class ClientModEvents {
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(BlockInit.STONE_TORCH.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(BlockInit.STONE_TORCH_WALL.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(BlockInit.LIFE_TREE_SAPLING.get(), RenderType.cutout());
         });
     }
 }

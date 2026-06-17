@@ -23,13 +23,11 @@ public class CreativeTabInit{
 
     // --- Tabs ---
     
-    @SuppressWarnings("null")
     public static final RegistryObject<CreativeModeTab> BLOCK_TAB = CreateTab("block_tab", () -> new ItemStack(ItemInit.HARDEND_BLOOD_ORE_ITEM.get()), BLOCK_TAB_ITEMS);
     //public static final RegistryObject<CreativeModeTab> ITEM_TAB = CreateTab("item_tab", Items.SKELETON_SKULL, Items.SKELETON_SKULL);
 
     // ---
 
-    @SuppressWarnings("null")
     public static RegistryObject<CreativeModeTab> CreateTab(String name, Supplier<ItemStack> icon, List<Supplier<? extends  ItemLike>> itemList) {
         return TABS.register(name,
             () -> CreativeModeTab.builder()

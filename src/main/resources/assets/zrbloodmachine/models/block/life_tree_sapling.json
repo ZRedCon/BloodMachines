@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+        "cross": "zrbloodmachine:block/life_tree_sapling"
+    }
+}

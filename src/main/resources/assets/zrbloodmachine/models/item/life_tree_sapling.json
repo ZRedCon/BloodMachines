@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "zrbloodmachine:block/life_tree_sapling"
+    }
+}
