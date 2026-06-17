@@ -14,6 +14,9 @@ public class CommonModEvents {
         event.enqueueWork(() -> {
             FireBlock fire = (FireBlock) Blocks.FIRE;
             fire.setFlammable(BlockInit.LIFE_TREE_LOG.get(), 500, 1);
+            fire.setFlammable(BlockInit.LIFE_TREE_SAPLING.get(), 500, 3);
+            fire.setFlammable(BlockInit.LIFE_TREE_FULL_LOG.get(), 500, 1);
+            fire.setFlammable(BlockInit.LIFE_TREE_FULL_LEAVES.get(), 500, 1);
         });
     }
 }

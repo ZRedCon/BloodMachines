@@ -15,6 +15,9 @@ public class ZRBloodMachine {
 
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
+        BlockEntityInit.BLOCK_ENTITIES.register(bus);
         CreativeTabInit.TABS.register(bus);
+        
+        ParticleInit.PARTICLE_TYPES.register(bus);
     }
 }

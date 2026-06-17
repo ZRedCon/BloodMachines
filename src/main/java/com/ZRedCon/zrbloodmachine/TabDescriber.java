@@ -8,6 +8,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 
+/*
+ * Despite not being used, I have decided to preserve it since it's 
+ * the first thing I wrote in Java for this mod that wasn't googled 
+ * in any way
+ */
+
 public class TabDescriber {
     public String name;
     public MutableComponent title;

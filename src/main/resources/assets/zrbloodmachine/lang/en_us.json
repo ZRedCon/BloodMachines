@@ -5,5 +5,8 @@
   "block.zrbloodmachine.hell_ore": "Hell Ore",
   "block.zrbloodmachine.stone_torch": "Stone Torch",
   "block.zrbloodmachine.life_tree_sapling": "Sapling of the Tree of Life",
-  "block.zrbloodmachine.life_tree_log": "Tree of Life Log"
+  "block.zrbloodmachine.life_tree_log": "Tree of Life Log",
+  "block.zrbloodmachine.life_tree_full_log": "Fed Tree of Life Log",
+  "block.zrbloodmachine.life_tree_full_leaves": "Tree of Life Leaves",
+  "block.zrbloodmachine.life_tree_base": "Tree of Life Base"
 }

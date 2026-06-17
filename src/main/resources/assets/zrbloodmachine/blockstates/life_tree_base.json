@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "fed=false": {
+            "model": "zrbloodmachine:block/life_tree_log"
+        },
+        "fed=true": {
+            "model": "zrbloodmachine:block/life_tree_full_log"
+        }
+    }
+}

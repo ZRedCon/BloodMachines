@@ -25,6 +25,8 @@ public class ItemInit {
     public static final RegistryObject<BlockItem> HELL_ORE_ITEM = CreateItemForBlock("hell_ore", BlockInit.HELL_ORE);
     public static final RegistryObject<BlockItem> LIFE_TREE_SAPLING_ITEM = CreateItemForBlock("life_tree_sapling", BlockInit.LIFE_TREE_SAPLING );
     public static final RegistryObject<BlockItem> LIFE_TREE_LOG_ITEM = CreateItemForBlock("life_tree_log", BlockInit.LIFE_TREE_LOG);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_LOG_ITEM = CreateItemForBlock("life_tree_full_log", BlockInit.LIFE_TREE_FULL_LOG);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_LEAVES_ITEM = CreateItemForBlock("life_tree_full_leaves", BlockInit.LIFE_TREE_FULL_LEAVES);
 
     // -- Other Items --
 

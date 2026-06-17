@@ -1,5 +1,8 @@
 package com.ZRedCon.zrbloodmachine;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -11,6 +14,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.BushBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -74,14 +78,27 @@ public class LifeTreeSaplingBlock extends BushBlock implements BonemealableBlock
             }
         }
 
+        List<BlockPos> structure = new ArrayList<>();
+
         // Building tree
-        for (int i = 0; i < height; i++) {
-            level.setBlock(pos.above(i), BlockInit.LIFE_TREE_LOG.get().defaultBlockState(), 3);
+        for (int i = 1; i < height; i++) {
+            BlockPos logPos = pos.above(i);
+            level.setBlock(logPos, BlockInit.LIFE_TREE_LOG.get().defaultBlockState(), 3);
+            structure.add(logPos);
         }
 
-        for (int i = 0; i < crossWidth; i++) {
-            level.setBlock(intersectionPos.north(i), BlockInit.LIFE_TREE_LOG.get().defaultBlockState().setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z), 3);
-            level.setBlock(intersectionPos.south(i), BlockInit.LIFE_TREE_LOG.get().defaultBlockState().setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z), 3);
+        for (int i = 1; i < crossWidth; i++) {
+            BlockPos northPos = intersectionPos.north(i), southPos = intersectionPos.south(i);
+            level.setBlock(northPos, BlockInit.LIFE_TREE_LOG.get().defaultBlockState().setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z), 3);
+            level.setBlock(southPos, BlockInit.LIFE_TREE_LOG.get().defaultBlockState().setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z), 3);
+            structure.add(northPos);
+            structure.add(southPos);
+        }
+
+        level.setBlock(pos, BlockInit.LIFE_TREE_BASE.get().defaultBlockState(), 3);
+        BlockEntity be = level.getBlockEntity(pos);
+        if (be instanceof LifeTreeBaseBlockEntity base) {
+            base.setStructure(structure);
         }
     }
 

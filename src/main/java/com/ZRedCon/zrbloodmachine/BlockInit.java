@@ -69,5 +69,26 @@ public class BlockInit {
             .sound(SoundType.WOOD)
     ));
 
-    
+    public static final RegistryObject<Block> LIFE_TREE_FULL_LOG = BLOCKS.register("life_tree_full_log", 
+        () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.WOOD)
+            .strength(4.0f)
+            .sound(SoundType.WOOD)
+    ));
+
+    public static final RegistryObject<Block> LIFE_TREE_FULL_LEAVES = BLOCKS.register("life_tree_full_leaves", 
+        () -> new LifeTreeLeavesBlock(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.PLANT)
+            .strength(0.2f)
+            .sound(SoundType.GRASS)
+            .noOcclusion()
+            .lightLevel(state -> 10)
+    ));
+
+    public static final RegistryObject<Block> LIFE_TREE_BASE = BLOCKS.register("life_tree_base", 
+        () -> new LifeTreeBaseBlock(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.WOOD)
+            .strength(4.0f)
+            .sound(SoundType.WOOD)
+    ));
 }
