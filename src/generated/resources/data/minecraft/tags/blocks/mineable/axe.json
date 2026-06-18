@@ -1,0 +1,31 @@
+{
+  "values": [
+    "zrbloodmachine:life_tree_wood",
+    "zrbloodmachine:life_tree_stripped_log",
+    "zrbloodmachine:life_tree_stripped_wood",
+    "zrbloodmachine:life_tree_planks",
+    "zrbloodmachine:life_tree_stairs",
+    "zrbloodmachine:life_tree_slab",
+    "zrbloodmachine:life_tree_fence",
+    "zrbloodmachine:life_tree_fence_gate",
+    "zrbloodmachine:life_tree_door",
+    "zrbloodmachine:life_tree_trapdoor",
+    "zrbloodmachine:life_tree_pressure_plate",
+    "zrbloodmachine:life_tree_button",
+    "zrbloodmachine:life_tree_full_wood",
+    "zrbloodmachine:life_tree_full_stripped_log",
+    "zrbloodmachine:life_tree_full_stripped_wood",
+    "zrbloodmachine:life_tree_full_planks",
+    "zrbloodmachine:life_tree_full_stairs",
+    "zrbloodmachine:life_tree_full_slab",
+    "zrbloodmachine:life_tree_full_fence",
+    "zrbloodmachine:life_tree_full_fence_gate",
+    "zrbloodmachine:life_tree_full_door",
+    "zrbloodmachine:life_tree_full_trapdoor",
+    "zrbloodmachine:life_tree_full_pressure_plate",
+    "zrbloodmachine:life_tree_full_button",
+    "zrbloodmachine:life_tree_log",
+    "zrbloodmachine:life_tree_full_log",
+    "zrbloodmachine:life_tree_base"
+  ]
+}

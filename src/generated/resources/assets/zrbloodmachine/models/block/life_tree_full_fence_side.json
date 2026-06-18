@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "zrbloodmachine:block/life_tree_full_planks"
+  }
+}

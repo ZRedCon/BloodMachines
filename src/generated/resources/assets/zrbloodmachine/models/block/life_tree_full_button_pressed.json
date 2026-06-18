@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "zrbloodmachine:block/life_tree_full_planks"
+  }
+}

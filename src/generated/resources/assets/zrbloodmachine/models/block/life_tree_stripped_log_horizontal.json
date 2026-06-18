@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "zrbloodmachine:block/life_tree_stripped_log_top",
+    "side": "zrbloodmachine:block/life_tree_stripped_log_side"
+  }
+}

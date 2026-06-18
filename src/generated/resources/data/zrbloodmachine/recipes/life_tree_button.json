@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "zrbloodmachine:life_tree_planks"
+    }
+  ],
+  "result": {
+    "item": "zrbloodmachine:life_tree_button"
+  }
+}

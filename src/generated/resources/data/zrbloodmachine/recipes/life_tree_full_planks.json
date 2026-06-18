@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "life_tree_planks",
+  "ingredients": [
+    [
+      {
+        "item": "zrbloodmachine:life_tree_full_log"
+      },
+      {
+        "item": "zrbloodmachine:life_tree_full_wood"
+      },
+      {
+        "item": "zrbloodmachine:life_tree_full_stripped_log"
+      },
+      {
+        "item": "zrbloodmachine:life_tree_full_stripped_wood"
+      }
+    ]
+  ],
+  "result": {
+    "count": 4,
+    "item": "zrbloodmachine:life_tree_full_planks"
+  }
+}

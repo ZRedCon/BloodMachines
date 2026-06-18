@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "zrbloodmachine:block/life_tree_full_pressure_plate"
+    },
+    "powered=true": {
+      "model": "zrbloodmachine:block/life_tree_full_pressure_plate_down"
+    }
+  }
+}

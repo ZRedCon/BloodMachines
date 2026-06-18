@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "zrbloodmachine:block/life_tree_full_planks",
+    "side": "zrbloodmachine:block/life_tree_full_planks",
+    "top": "zrbloodmachine:block/life_tree_full_planks"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "zrbloodmachine:block/life_tree_planks"
+  }
+}

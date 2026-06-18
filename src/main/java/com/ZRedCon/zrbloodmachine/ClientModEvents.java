@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = ZRBloodMachine.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientModEvents {
-
+    @SuppressWarnings("removal")
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
@@ -18,6 +18,11 @@ public class ClientModEvents {
             ItemBlockRenderTypes.setRenderLayer(BlockInit.STONE_TORCH_WALL.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(BlockInit.LIFE_TREE_SAPLING.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(BlockInit.LIFE_TREE_FULL_LEAVES.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(BlockInit.LIFE_TREE_DOOR.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(BlockInit.LIFE_TREE_TRAPDOOR.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(BlockInit.LIFE_TREE_FULL_DOOR.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(BlockInit.LIFE_TREE_FULL_TRAPDOOR.get(), RenderType.cutout());
+
         });
     }
 

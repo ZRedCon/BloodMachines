@@ -27,6 +27,30 @@ public class ItemInit {
     public static final RegistryObject<BlockItem> LIFE_TREE_LOG_ITEM = CreateItemForBlock("life_tree_log", BlockInit.LIFE_TREE_LOG);
     public static final RegistryObject<BlockItem> LIFE_TREE_FULL_LOG_ITEM = CreateItemForBlock("life_tree_full_log", BlockInit.LIFE_TREE_FULL_LOG);
     public static final RegistryObject<BlockItem> LIFE_TREE_FULL_LEAVES_ITEM = CreateItemForBlock("life_tree_full_leaves", BlockInit.LIFE_TREE_FULL_LEAVES);
+    public static final RegistryObject<BlockItem> LIFE_TREE_WOOD_ITEM = CreateItemForBlock("life_tree_wood", BlockInit.LIFE_TREE_WOOD);
+    public static final RegistryObject<BlockItem> LIFE_TREE_STRIPPED_LOG_ITEM = CreateItemForBlock("life_tree_stripped_log", BlockInit.LIFE_TREE_STRIPPED_LOG);
+    public static final RegistryObject<BlockItem> LIFE_TREE_STRIPPED_WOOD_ITEM = CreateItemForBlock("life_tree_stripped_wood", BlockInit.LIFE_TREE_STRIPPED_WOOD);
+    public static final RegistryObject<BlockItem> LIFE_TREE_PLANKS_ITEM = CreateItemForBlock("life_tree_planks", BlockInit.LIFE_TREE_PLANKS);
+    public static final RegistryObject<BlockItem> LIFE_TREE_STAIRS_ITEM = CreateItemForBlock("life_tree_stairs", BlockInit.LIFE_TREE_STAIRS);
+    public static final RegistryObject<BlockItem> LIFE_TREE_SLAB_ITEM = CreateItemForBlock("life_tree_slab", BlockInit.LIFE_TREE_SLAB);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FENCE_ITEM = CreateItemForBlock("life_tree_fence", BlockInit.LIFE_TREE_FENCE);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FENCE_GATE_ITEM = CreateItemForBlock("life_tree_fence_gate", BlockInit.LIFE_TREE_FENCE_GATE);
+    public static final RegistryObject<BlockItem> LIFE_TREE_DOOR_ITEM = CreateItemForBlock("life_tree_door", BlockInit.LIFE_TREE_DOOR);
+    public static final RegistryObject<BlockItem> LIFE_TREE_TRAPDOOR_ITEM = CreateItemForBlock("life_tree_trapdoor", BlockInit.LIFE_TREE_TRAPDOOR);
+    public static final RegistryObject<BlockItem> LIFE_TREE_PRESSURE_PLATE_ITEM = CreateItemForBlock("life_tree_pressure_plate", BlockInit.LIFE_TREE_PRESSURE_PLATE);
+    public static final RegistryObject<BlockItem> LIFE_TREE_BUTTON_ITEM = CreateItemForBlock("life_tree_button", BlockInit.LIFE_TREE_BUTTON);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_WOOD_ITEM = CreateItemForBlock("life_tree_full_wood", BlockInit.LIFE_TREE_FULL_WOOD);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_STRIPPED_LOG_ITEM = CreateItemForBlock("life_tree_full_stripped_log", BlockInit.LIFE_TREE_FULL_STRIPPED_LOG);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_STRIPPED_WOOD_ITEM = CreateItemForBlock("life_tree_full_stripped_wood", BlockInit.LIFE_TREE_FULL_STRIPPED_WOOD);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_PLANKS_ITEM = CreateItemForBlock("life_tree_full_planks", BlockInit.LIFE_TREE_FULL_PLANKS);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_STAIRS_ITEM = CreateItemForBlock("life_tree_full_stairs", BlockInit.LIFE_TREE_FULL_STAIRS);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_SLAB_ITEM = CreateItemForBlock("life_tree_full_slab", BlockInit.LIFE_TREE_FULL_SLAB);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_FENCE_ITEM = CreateItemForBlock("life_tree_full_fence", BlockInit.LIFE_TREE_FULL_FENCE);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_FENCE_GATE_ITEM = CreateItemForBlock("life_tree_full_fence_gate", BlockInit.LIFE_TREE_FULL_FENCE_GATE);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_DOOR_ITEM = CreateItemForBlock("life_tree_full_door", BlockInit.LIFE_TREE_FULL_DOOR);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_TRAPDOOR_ITEM = CreateItemForBlock("life_tree_full_trapdoor", BlockInit.LIFE_TREE_FULL_TRAPDOOR);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_PRESSURE_PLATE_ITEM = CreateItemForBlock("life_tree_full_pressure_plate", BlockInit.LIFE_TREE_FULL_PRESSURE_PLATE);
+    public static final RegistryObject<BlockItem> LIFE_TREE_FULL_BUTTON_ITEM = CreateItemForBlock("life_tree_full_button", BlockInit.LIFE_TREE_FULL_BUTTON);
 
     // -- Other Items --
 
@@ -36,7 +60,7 @@ public class ItemInit {
 
     // --
 
-    public static RegistryObject<BlockItem> CreateItemForBlock(String name, RegistryObject<Block> reference) {
+    public static RegistryObject<BlockItem> CreateItemForBlock(String name, RegistryObject<? extends Block> reference) {
         return RegisterItem(TabType.BLOCK, name, 
             () -> new BlockItem(reference.get(), BLOCK_PROPERTIES)
         );

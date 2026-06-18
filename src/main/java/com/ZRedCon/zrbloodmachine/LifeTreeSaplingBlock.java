@@ -61,9 +61,9 @@ public class LifeTreeSaplingBlock extends BushBlock implements BonemealableBlock
 
     public void grow(ServerLevel level, RandomSource random, BlockPos pos) {
         int height = 4 + random.nextInt(7);
-        int intersectionHeight = (int)(height * 3.0 / 4 + 0.5) - 1; // This should be 6
+        int intersectionHeight = (int)(height * 3.0 / 4 + 0.5) - 1;
         BlockPos intersectionPos = pos.above(intersectionHeight);
-        int crossWidth = (height - 2)/2 + 1; // This should be 3
+        int crossWidth = (height - 2)/2 + 1;
 
         // Occlusion checking
         for (int i = 1; i < height; i++) {
@@ -98,7 +98,7 @@ public class LifeTreeSaplingBlock extends BushBlock implements BonemealableBlock
         level.setBlock(pos, BlockInit.LIFE_TREE_BASE.get().defaultBlockState(), 3);
         BlockEntity be = level.getBlockEntity(pos);
         if (be instanceof LifeTreeBaseBlockEntity base) {
-            base.setStructure(structure);
+            base.setStructure(structure, intersectionHeight-1);
         }
     }
 

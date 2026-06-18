@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": { "item": "zrbloodmachine:life_tree_full_leaves" },
+        "title": { "text": "Suffering Leaves Suffering Leaves" },
+        "description": { "text": "Feed a Tree of Life until it's fully grown." },
+        "frame": "goal",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "code_triggered": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [ "code_triggered" ]
+    ]
+}

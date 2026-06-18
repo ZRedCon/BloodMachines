@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "zrbloodmachine:block/life_tree_full_planks"
+  }
+}

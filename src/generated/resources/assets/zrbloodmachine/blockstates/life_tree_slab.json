@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "zrbloodmachine:block/life_tree_slab"
+    },
+    "type=double": {
+      "model": "zrbloodmachine:block/life_tree_planks"
+    },
+    "type=top": {
+      "model": "zrbloodmachine:block/life_tree_slab_top"
+    }
+  }
+}

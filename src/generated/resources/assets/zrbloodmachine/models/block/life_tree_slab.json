@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "zrbloodmachine:block/life_tree_planks",
+    "side": "zrbloodmachine:block/life_tree_planks",
+    "top": "zrbloodmachine:block/life_tree_planks"
+  }
+}
