@@ -22,7 +22,6 @@ public class ClientModEvents {
             ItemBlockRenderTypes.setRenderLayer(BlockInit.LIFE_TREE_TRAPDOOR.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(BlockInit.LIFE_TREE_FULL_DOOR.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(BlockInit.LIFE_TREE_FULL_TRAPDOOR.get(), RenderType.cutout());
-
         });
     }
 

@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": { "item": "zrbloodmachine:raw_hell_ore" },
+        "title": { "text": "Into the Fire" },
+        "description": { "text": "Carefully extract Raw Hell Ore with a Silk Touch pickaxe." },
+        "frame": "task",
+        "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "got_raw_hell_ore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": [ "zrbloodmachine:raw_hell_ore" ] }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [ "got_raw_hell_ore" ]
+    ]
+}

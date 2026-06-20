@@ -77,7 +77,7 @@ public class BlockInit {
     ));
 
     public static final RegistryObject<Block> HELL_ORE = BLOCKS.register("hell_ore", 
-        () -> new Block(BlockBehaviour.Properties.of()
+        () -> new HellOreBlock(BlockBehaviour.Properties.of()
         .mapColor(MapColor.COLOR_ORANGE)
         .strength(1.0f, 0.5f)
         .requiresCorrectToolForDrops()

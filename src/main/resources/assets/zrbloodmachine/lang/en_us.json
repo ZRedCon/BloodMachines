@@ -32,5 +32,15 @@
   "block.zrbloodmachine.life_tree_full_door": "Fed Tree of Life Door",
   "block.zrbloodmachine.life_tree_full_trapdoor": "Fed Tree of Life Trapdoor",
   "block.zrbloodmachine.life_tree_full_pressure_plate": "Fed Tree of Life Pressure Plate",
-  "block.zrbloodmachine.life_tree_full_button": "Fed Tree of Life Button"
+  "block.zrbloodmachine.life_tree_full_button": "Fed Tree of Life Button",
+  "item.zrbloodmachine.raw_hell_ore": "Raw Hell Ore",
+  "item.zrbloodmachine.burning_dust": "Burning Dust",
+  "item.zrbloodmachine.empty_syringe": "Empty Syringe",
+  "item.zrbloodmachine.full_syringe": "Full Syringe",
+  "item.zrbloodmachine.wooden_syringe": "Wooden Syringe",
+  "item.zrbloodmachine.full_wooden_syringe": "Full Wooden Syringe",
+  "item.zrbloodmachine.eye_of_hell": "Eye Of Hell",
+  "item.zrbloodmachine.hardend_blood_pearl": "Hard Blood Pearl",
+  "item.zrbloodmachine.hell_mass": "Hell Mass",
+  "item.zrbloodmachine.snake_leather": "Snake Leather"
 }

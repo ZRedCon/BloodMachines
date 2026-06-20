@@ -20,7 +20,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.entity.player.Player;
 
-
+@SuppressWarnings("removal")
 public class LifeTreeBaseBlockEntity extends BlockEntity {
     private static final Direction[] FEED_DIRECTIONS = { Direction.UP, Direction.DOWN, Direction.NORTH, Direction.SOUTH };
 

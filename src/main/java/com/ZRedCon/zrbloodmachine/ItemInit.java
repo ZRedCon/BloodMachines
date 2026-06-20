@@ -58,7 +58,26 @@ public class ItemInit {
         () -> new StandingAndWallBlockItem(BlockInit.STONE_TORCH.get(), BlockInit.STONE_TORCH_WALL.get(), new Item.Properties(), Direction.DOWN)
     );
 
+    public static final RegistryObject<Item> RAW_HELL_ORE = CreateItem("raw_hell_ore", Props().fireResistant());
+    public static final RegistryObject<Item> BURNING_DUST = CreateItem("burning_dust", Props().fireResistant());
+    public static final RegistryObject<Item> WOODEN_SYRINGE = CreateItem("wooden_syringe", Props());
+    public static final RegistryObject<Item> FULL_WOODEN_SYRINGE = CreateItem("full_wooden_syringe", Props());
+    public static final RegistryObject<Item> EMPTY_SYRINGE = CreateItem("empty_syringe", Props());
+    public static final RegistryObject<Item> FULL_SYRINGE = CreateItem("full_syringe", Props());
+    public static final RegistryObject<Item> EYE_OF_HELL = CreateItem("eye_of_hell", Props().fireResistant());
+    public static final RegistryObject<Item> HARDENED_BLOOD_PEARL = CreateItem("hardend_blood_pearl", Props());
+    public static final RegistryObject<Item> HELL_MASS = CreateItem("hell_mass", Props());
+    public static final RegistryObject<Item> SNAKE_LEATHER = CreateItem("snake_leather", Props());
+
     // --
+
+    public static Properties Props() {
+        return new Item.Properties();
+    }
+
+    public static RegistryObject<Item> CreateItem(String name, Properties properties) {
+        return RegisterItem(TabType.ITEM, name, () -> new Item(properties));
+    }
 
     public static RegistryObject<BlockItem> CreateItemForBlock(String name, RegistryObject<? extends Block> reference) {
         return RegisterItem(TabType.BLOCK, name, 
